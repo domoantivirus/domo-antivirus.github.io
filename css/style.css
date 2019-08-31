@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+  -webkit-border-radius: 16px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #343a40;
+  -webkit-border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: #E9E9E9;
+  -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: #E9E9E9;
+  -webkit-border-radius: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a:active, a:visited, a:link, a:hover {
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+
+button {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+header {
+	background-image: url("../images/background-header.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, .2);
+    position: relative;
+    align-items: center;
+}
+
+.navbar ul {
+    margin-right: 7rem;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-logo {
+    margin-right: auto;
+    margin-left: 7rem;
+}
+
+.nav-item {
+	text-transform: uppercase;
+	margin: auto 5px;
+    padding: 2rem 0rem;
+}
+
+.nav-item a {
+    padding: 2rem .5rem;
+    color: rgba(250, 250, 250, .5);
+    font-weight: 500;
+}
+
+.nav-item a:hover {
+	background-image: url("../images/background-nav-hover.png");
+	background-color: rgba(0, 0, 0, .05);
+	background-position: bottom;
+	background-repeat: repeat-x;
+    color: rgba(250, 250, 250, .7);
+}
+
+.container1 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.apresentacao {
+    color: rgb(250, 250, 250);
+    text-align: center;
+    display: flex;
+    align-items: center;
+	flex-direction: column;
+    margin: auto 10vh;
+}
+
+.apresentacao h1 {
+	font-weight: 700;
+	font-size: 3.2rem;
+    padding: 3rem;
+}
+
+.apresentacao p {
+	font-size: 1.3rem;
+	font-weight: 400;
+    padding-bottom: 3rem;
+    line-height: 1.8rem;
+}
+
+.dst {
+	color: rgba(38, 199, 215, 1);
+	font-weight: 500;
+}
+
+.baixar-antivirus {
+	width: 25%;
+	padding: 20px;
+	font-size: 1.3rem;
+	font-weight: 500;
+	background-color: rgba(38, 199, 215, 1);
+	color: rgb(250, 250, 250);
+	border-radius: 3px;
+}
+
+.baixar-antivirus:hover {
+	background-color: rgba(81, 204, 224, 1);
+	transition: all .5s;
+}
+
+.saiba-mais {
+	width: 10%;
+	font-weight: 500;
+	background-color: transparent;
+	border: 1px solid rgb(250, 250, 250);
+	border-radius: 3px;
+	color: rgba(250, 250, 250, 1);
+	padding: 10px;
+	font-size: .9rem;
+    margin: 2.5rem;
+}
+
+.container3 {
+    background-color: rgb(250, 250, 250);
+    color: rgb(45, 45, 45);
+}
+
+.nuvem, .desempenho, .seguranca {
+    width: 100%;
+    background-color: rgb(251, 251, 251);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloco-txt {
+    width: 60%;
+    margin: 4rem;
+}
+
+.bloco-txt h1 {
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: rgb(81, 204, 224);
+    margin: 1.5rem auto;
+}
+
+.bloco-txt h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 1rem auto;
+}
+
+.bloco-txt p {
+    font-size: 1.3rem;
+}
+
+.bloco-txt .plus {
+    color: rgb(170, 166, 191);
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+.bloco-txt .plus-esp {
+    font-size: .8rem;
+    color: rgb(170, 166, 191);
+    margin-top: .5rem;
+}
+
+.botao {
+    width: 35%;
+	background-color: rgb(45, 45, 45);
+	border: 1px solid rgb(250, 250, 250);
+	border-radius: 3px;
+	color: rgba(250, 250, 250, 1);
+    margin-top: 2rem;
+	padding: 10px;
+	font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.img-topicos {
+    margin-top: 3rem;
+    width: 50%;
+}
+
+.desempenho {
+    color: rgb(250, 250, 250);
+    background-color: rgb(45, 45, 45);
+}
+
+.desempenho .bloco-txt .botao {
+	background-color: rgb(250, 250, 250);
+	color: rgba(45, 45, 45, 1);
+	font-size: 1.1rem;
+}
+
+.contatos h4, .social h4, .empresa h4, .planos h4, .desemp h4{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contatos h5 {
+    font-weight: 500;
+}
+
+.contatos a, .contatos p, .empresa a, .planos a, .desemp a, .social i {
+    font-weight: 200;
+    margin-bottom: 1rem;
+    color: rgba(250, 250, 250, .5);
+}
+
+.contatos a:hover, .empresa a:hover, .planos a:hover, .desemp a:hover, .social i:hover {
+    color: rgba(250, 250, 250, 1);
+}
+
+.social i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.social p {
+    margin-top: 5rem;
+    font-size: .8rem;
+    text-align: right;
+}
+
+.social img {
+    margin-top: .5rem;
+    float: right;
+}
+
+.contatos, .empresa, .planos, .desemp {
+    width: 20%;
+}
+
+footer {
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.flex {
+    width: 85%;
+    color: rgb(250, 250, 250);
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) {
+    .nav-item {
+		font-size: 1.3rem;
+		margin-left: .5rem;
+	}
+    
+	.nav-item a:hover {
+		padding: .5rem;
+        background: none;
+	}
+
+	.apresentacao {
+		margin: auto 3vh;
+	}
+    
+    .apresentacao h1 {
+        padding: 0;
+        margin: 2.5rem 0;
+        font-size: 3rem;
+    }
+
+	.baixar-antivirus {
+		width: 75%;
+	}
+
+	.saiba-mais {
+		width: 30%;
+	}
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .nuvem, .seguranca {
+        flex-direction: column;
+    }
+    
+    .desempenho {
+        flex-direction: column-reverse;
+    }
+    
+    .bloco-txt {
+        width: auto; 
+        margin: 2.5rem;
+    }
+    
+    .botao {
+        width: 40%;
+    }
+    
+    .img-topicos {
+        margin: 0;
+        width: 70%;
+    }
+    
+    .empresa, .desemp, .planos, .contatos { 
+        width: 30%;
+        padding: 1rem;
+    }
+    
+    .social {
+        padding-top: 2rem;
+        text-align: center;
+        width: auto;
+    }
+    
+    .social p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .social img {
+        float: inherit;
+    }
+    
+    .flex {
+        width: auto;
+        flex-flow: row wrap;
+        padding: 1rem 0;
+    }
+}
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .nav-item {
+		font-size: 1.3rem;
+		margin-left: .5rem;
+	}
+
+	.nav-item a:hover {
+		padding: .5rem;
+        background: none;
+	}
+
+	.apresentacao {
+		margin: auto 3vh;
+	}
+    
+    .apresentacao h1 {
+        padding: 0;
+        margin: 2.5rem 0;
+        font-size: 3rem;
+    }
+
+	.baixar-antivirus {
+		width: 50%;
+	}
+
+	.saiba-mais {
+		width: 15%;
+		margin: 2.5rem;
+	}
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    
+    .nuvem, .seguranca {
+        flex-direction: column;
+    }
+    
+    .desempenho {
+        flex-direction: column-reverse;
+    }
+    
+    .bloco-txt {
+        width: auto; 
+        margin: 2.5rem;
+    }
+    
+    .botao {
+        width: 40%;
+    }
+    
+    .img-topicos {
+        margin-top: auto;
+        margin-bottom: 0;
+        width: 70%;
+    }
+    
+    .empresa, .desemp, .planos, .contatos { 
+        width: 30%;
+        padding: 1rem;
+    }
+    
+    .social {
+        padding-top: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .social p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .social img {
+        float: inherit;
+    }
+    
+    .flex {
+        width: auto;
+        flex-flow: row wrap;
+        padding: 1rem 0;
+    }
+}
+
+/* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .baixar-antivirus {
+		width: 50%;
+	}
+
+	.saiba-mais {
+		width: 20%;
+	}
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .nuvem, .seguranca {
+        flex-direction: column;
+    }
+    
+    .desempenho {
+        flex-direction: column-reverse;
+    }
+    
+    .bloco-txt {
+        width: auto; 
+        margin: 2.5rem;
+    }
+    
+    .botao {
+        width: 40%;
+    }
+    
+    .img-topicos {
+        margin-top: auto;
+        margin-bottom: 0;
+        width: 70%;
+    }
+    
+    .empresa, .desemp, .planos, .contatos { 
+        width: 30%;
+        padding: 1rem;
+    }
+    
+    .social {
+        padding-top: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .social p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .social img {
+        float: inherit;
+    }
+    
+    .flex {
+        width: auto;
+        flex-flow: row wrap;
+        padding: 1rem 0;
+    }
+}
+
+/* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .baixar-antivirus {
+		width: 50%;
+	}
+    
+    .img-topicos {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+}
+
+// Dispositivos extra large (desktops grandes com 1200px ou mais)
+@media (min-width: 1200px) {
+}
